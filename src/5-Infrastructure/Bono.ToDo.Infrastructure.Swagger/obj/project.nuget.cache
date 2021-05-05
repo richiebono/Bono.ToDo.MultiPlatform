@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "NWrI578WYVRevjcjOgYzapRfTe6TuiPI/azHOfMAXRyODmq1hZQIu3nkzlkZiEARpwXrVYGVW+PAOYAwHGwNjw==",
+  "success": true,
+  "projectFilePath": "C:\\Bono.ToDo\\src\\5-Infrastructure\\Bono.ToDo.Infrastructure.Swagger\\Bono.ToDo.Infrastructure.Swagger.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\pessegos\\.nuget\\packages\\microsoft.openapi\\1.1.4\\microsoft.openapi.1.1.4.nupkg.sha512",
+    "C:\\Users\\pessegos\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.5.1\\swashbuckle.aspnetcore.swagger.5.5.1.nupkg.sha512",
+    "C:\\Users\\pessegos\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.5.1\\swashbuckle.aspnetcore.swaggergen.5.5.1.nupkg.sha512",
+    "C:\\Users\\pessegos\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.5.1\\swashbuckle.aspnetcore.swaggerui.5.5.1.nupkg.sha512"
+  ],
+  "logs": []
+}

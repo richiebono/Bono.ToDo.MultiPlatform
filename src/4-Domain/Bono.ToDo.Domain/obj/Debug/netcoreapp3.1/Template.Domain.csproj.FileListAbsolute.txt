@@ -1,0 +1,9 @@
+C:\Bono.ToDo\Template.Domain\bin\Debug\netcoreapp3.1\Template.Domain.deps.json
+C:\Bono.ToDo\Template.Domain\bin\Debug\netcoreapp3.1\Template.Domain.dll
+C:\Bono.ToDo\Template.Domain\bin\Debug\netcoreapp3.1\Template.Domain.pdb
+C:\Bono.ToDo\Template.Domain\obj\Debug\netcoreapp3.1\Template.Domain.csprojAssemblyReference.cache
+C:\Bono.ToDo\Template.Domain\obj\Debug\netcoreapp3.1\Template.Domain.AssemblyInfoInputs.cache
+C:\Bono.ToDo\Template.Domain\obj\Debug\netcoreapp3.1\Template.Domain.AssemblyInfo.cs
+C:\Bono.ToDo\Template.Domain\obj\Debug\netcoreapp3.1\Template.Domain.csproj.CoreCompileInputs.cache
+C:\Bono.ToDo\Template.Domain\obj\Debug\netcoreapp3.1\Template.Domain.dll
+C:\Bono.ToDo\Template.Domain\obj\Debug\netcoreapp3.1\Template.Domain.pdb

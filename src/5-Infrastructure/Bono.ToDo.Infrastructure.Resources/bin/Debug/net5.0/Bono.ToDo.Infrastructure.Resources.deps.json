@@ -1,0 +1,34 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Bono.ToDo.Infrastructure.Resources/1.0.0": {
+        "runtime": {
+          "Bono.ToDo.Infrastructure.Resources.dll": {}
+        },
+        "resources": {
+          "en-us/Bono.ToDo.Infrastructure.Resources.resources.dll": {
+            "locale": "en-us"
+          },
+          "es-es/Bono.ToDo.Infrastructure.Resources.resources.dll": {
+            "locale": "es-es"
+          },
+          "pt-br/Bono.ToDo.Infrastructure.Resources.resources.dll": {
+            "locale": "pt-br"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Bono.ToDo.Infrastructure.Resources/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

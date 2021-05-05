@@ -1,0 +1,72 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Bono.ToDo.Domain/1.0.0": {
+        "dependencies": {
+          "Bono.ToDo.Infrastructure.Utils": "1.0.0"
+        },
+        "runtime": {
+          "Bono.ToDo.Domain.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.Abstractions/6.0.0-preview.1.21102.12": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "6.0.0-preview.1.21102.12"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.10212"
+          }
+        }
+      },
+      "Microsoft.Extensions.Primitives/6.0.0-preview.1.21102.12": {
+        "runtime": {
+          "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.10212"
+          }
+        }
+      },
+      "Bono.ToDo.Infrastructure.Utils/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "6.0.0-preview.1.21102.12"
+        },
+        "runtime": {
+          "Bono.ToDo.Infrastructure.Utils.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Bono.ToDo.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.Configuration.Abstractions/6.0.0-preview.1.21102.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wHpITHcd+uAY6lpL0DmEsTpOvkCHHMrN3ZAIhH0p+Qw0Cez+xfiD5eeANIWlJgoXu9jWdoAydgVkrPCfgMNY2Q==",
+      "path": "microsoft.extensions.configuration.abstractions/6.0.0-preview.1.21102.12",
+      "hashPath": "microsoft.extensions.configuration.abstractions.6.0.0-preview.1.21102.12.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Primitives/6.0.0-preview.1.21102.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WVDAGAYEuFtXJGhFQjR29NQHPjkmYVG9y/qwKAbVN03lfO3QjnmnI3wqjQ2oEE1j78z3fE0TkNkGj8W+LmgndQ==",
+      "path": "microsoft.extensions.primitives/6.0.0-preview.1.21102.12",
+      "hashPath": "microsoft.extensions.primitives.6.0.0-preview.1.21102.12.nupkg.sha512"
+    },
+    "Bono.ToDo.Infrastructure.Utils/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

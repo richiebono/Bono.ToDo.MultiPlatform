@@ -1,0 +1,17 @@
+C:\Bono.ToDo\src\5-Infrastructure\Bono.ToDo.Infrastructure.Auth\bin\Debug\net5.0\Bono.ToDo.Infrastructure.Auth.deps.json
+C:\Bono.ToDo\src\5-Infrastructure\Bono.ToDo.Infrastructure.Auth\bin\Debug\net5.0\Bono.ToDo.Infrastructure.Auth.dll
+C:\Bono.ToDo\src\5-Infrastructure\Bono.ToDo.Infrastructure.Auth\bin\Debug\net5.0\ref\Bono.ToDo.Infrastructure.Auth.dll
+C:\Bono.ToDo\src\5-Infrastructure\Bono.ToDo.Infrastructure.Auth\bin\Debug\net5.0\Bono.ToDo.Infrastructure.Auth.pdb
+C:\Bono.ToDo\src\5-Infrastructure\Bono.ToDo.Infrastructure.Auth\bin\Debug\net5.0\Bono.ToDo.Domain.dll
+C:\Bono.ToDo\src\5-Infrastructure\Bono.ToDo.Infrastructure.Auth\bin\Debug\net5.0\Bono.ToDo.Infrastructure.Utils.dll
+C:\Bono.ToDo\src\5-Infrastructure\Bono.ToDo.Infrastructure.Auth\bin\Debug\net5.0\Bono.ToDo.Domain.pdb
+C:\Bono.ToDo\src\5-Infrastructure\Bono.ToDo.Infrastructure.Auth\bin\Debug\net5.0\Bono.ToDo.Infrastructure.Utils.pdb
+C:\Bono.ToDo\src\5-Infrastructure\Bono.ToDo.Infrastructure.Auth\obj\Debug\net5.0\Bono.ToDo.Infrastructure.Auth.csprojAssemblyReference.cache
+C:\Bono.ToDo\src\5-Infrastructure\Bono.ToDo.Infrastructure.Auth\obj\Debug\net5.0\Bono.ToDo.Infrastructure.Auth.GeneratedMSBuildEditorConfig.editorconfig
+C:\Bono.ToDo\src\5-Infrastructure\Bono.ToDo.Infrastructure.Auth\obj\Debug\net5.0\Bono.ToDo.Infrastructure.Auth.AssemblyInfoInputs.cache
+C:\Bono.ToDo\src\5-Infrastructure\Bono.ToDo.Infrastructure.Auth\obj\Debug\net5.0\Bono.ToDo.Infrastructure.Auth.AssemblyInfo.cs
+C:\Bono.ToDo\src\5-Infrastructure\Bono.ToDo.Infrastructure.Auth\obj\Debug\net5.0\Bono.ToDo.Infrastructure.Auth.csproj.CoreCompileInputs.cache
+C:\Bono.ToDo\src\5-Infrastructure\Bono.ToDo.Infrastructure.Auth\obj\Debug\net5.0\Bono.ToDo.Infrastructure.Auth.csproj.CopyComplete
+C:\Bono.ToDo\src\5-Infrastructure\Bono.ToDo.Infrastructure.Auth\obj\Debug\net5.0\Bono.ToDo.Infrastructure.Auth.dll
+C:\Bono.ToDo\src\5-Infrastructure\Bono.ToDo.Infrastructure.Auth\obj\Debug\net5.0\ref\Bono.ToDo.Infrastructure.Auth.dll
+C:\Bono.ToDo\src\5-Infrastructure\Bono.ToDo.Infrastructure.Auth\obj\Debug\net5.0\Bono.ToDo.Infrastructure.Auth.pdb

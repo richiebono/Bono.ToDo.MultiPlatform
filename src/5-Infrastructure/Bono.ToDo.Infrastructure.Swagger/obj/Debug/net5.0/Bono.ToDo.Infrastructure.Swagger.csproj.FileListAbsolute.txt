@@ -1,0 +1,12 @@
+C:\Bono.ToDo\src\5-Infrastructure\Bono.ToDo.Infrastructure.Swagger\bin\Debug\net5.0\Bono.ToDo.Infrastructure.Swagger.deps.json
+C:\Bono.ToDo\src\5-Infrastructure\Bono.ToDo.Infrastructure.Swagger\bin\Debug\net5.0\Bono.ToDo.Infrastructure.Swagger.dll
+C:\Bono.ToDo\src\5-Infrastructure\Bono.ToDo.Infrastructure.Swagger\bin\Debug\net5.0\ref\Bono.ToDo.Infrastructure.Swagger.dll
+C:\Bono.ToDo\src\5-Infrastructure\Bono.ToDo.Infrastructure.Swagger\bin\Debug\net5.0\Bono.ToDo.Infrastructure.Swagger.pdb
+C:\Bono.ToDo\src\5-Infrastructure\Bono.ToDo.Infrastructure.Swagger\obj\Debug\net5.0\Bono.ToDo.Infrastructure.Swagger.csprojAssemblyReference.cache
+C:\Bono.ToDo\src\5-Infrastructure\Bono.ToDo.Infrastructure.Swagger\obj\Debug\net5.0\Bono.ToDo.Infrastructure.Swagger.GeneratedMSBuildEditorConfig.editorconfig
+C:\Bono.ToDo\src\5-Infrastructure\Bono.ToDo.Infrastructure.Swagger\obj\Debug\net5.0\Bono.ToDo.Infrastructure.Swagger.AssemblyInfoInputs.cache
+C:\Bono.ToDo\src\5-Infrastructure\Bono.ToDo.Infrastructure.Swagger\obj\Debug\net5.0\Bono.ToDo.Infrastructure.Swagger.AssemblyInfo.cs
+C:\Bono.ToDo\src\5-Infrastructure\Bono.ToDo.Infrastructure.Swagger\obj\Debug\net5.0\Bono.ToDo.Infrastructure.Swagger.csproj.CoreCompileInputs.cache
+C:\Bono.ToDo\src\5-Infrastructure\Bono.ToDo.Infrastructure.Swagger\obj\Debug\net5.0\Bono.ToDo.Infrastructure.Swagger.dll
+C:\Bono.ToDo\src\5-Infrastructure\Bono.ToDo.Infrastructure.Swagger\obj\Debug\net5.0\ref\Bono.ToDo.Infrastructure.Swagger.dll
+C:\Bono.ToDo\src\5-Infrastructure\Bono.ToDo.Infrastructure.Swagger\obj\Debug\net5.0\Bono.ToDo.Infrastructure.Swagger.pdb

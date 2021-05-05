@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\5-Infrastructure\Bono.ToDo.Infrastructure.Auth\Bono.ToDo.Infrastructure.Auth.csproj" />
+    <ProjectReference Include="..\..\4-Domain\Bono.ToDo.Domain\Bono.ToDo.Domain.csproj" />
+    <ProjectReference Include="..\..\5-Infrastructure\Bono.ToDo.Infrastructure.Resources\Bono.ToDo.Infrastructure.Resources.csproj" />
+  </ItemGroup>
+
+</Project>
