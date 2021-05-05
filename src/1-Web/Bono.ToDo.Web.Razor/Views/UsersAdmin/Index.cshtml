@@ -1,0 +1,49 @@
+﻿@using Bono.ToDo.Infrastructure.Resources
+@model IEnumerable<Bono.ToDo.Web.Razor.Models.RegisterViewModel>
+
+@{
+    ViewBag.Title = Resources.UserList;
+}
+<h2>@Resources.UserList</h2>
+<p style="float: right">
+    <a href="@Url.Action("Create", "UsersAdmin")" class="btn btn-outline-success btn-sm">
+        <i class="fa fa-plus"></i> @Resources.CreateNew
+    </a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.UserName)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td style="width: 80%;">
+                    @Html.DisplayFor(modelItem => item.UserName)
+                </td>
+                <td style="text-align: center">
+                    @Html.ActionLink(Resources.Edit, "Edit", new { id = item.Id })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+@section Scripts{
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.table').dataTable( {
+                @*"language": {
+                    "url": "@String.Format("/scripts/datatables.extensions/i18n/datatable.{0}.js", Bono.ToDo.Web.CustomRouteConfig.Culture.CultureHelper.GetCurrentNeutralCulture())"
+                }*@
+            });
+        });
+    </script>
+}

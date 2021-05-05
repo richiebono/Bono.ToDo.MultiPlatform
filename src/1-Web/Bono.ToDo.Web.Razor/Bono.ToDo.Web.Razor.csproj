@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <CopyRefAssembliesToPublishDirectory>false</CopyRefAssembliesToPublishDirectory>
+    <UserSecretsId>b4ecb263-fb3d-43cf-8ed7-67667ca1fb8e</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.4" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.13" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\2-Api\Bono.ToDo.Api.Account\Bono.ToDo.Api.Account.csproj" />
+    <ProjectReference Include="..\..\2-Api\Bono.ToDo.Api.TaskToDo\Bono.ToDo.Api.TaskToDo.csproj" />
+    <ProjectReference Include="..\..\5-Infrastructure\Bono.ToDo.Infrastructure.Resources\Bono.ToDo.Infrastructure.Resources.csproj" />
+    <ProjectReference Include="..\..\5-Infrastructure\Bono.ToDo.Infrastructure.Utils\Bono.ToDo.Infrastructure.Utils.csproj" />
+  </ItemGroup>
+
+</Project>

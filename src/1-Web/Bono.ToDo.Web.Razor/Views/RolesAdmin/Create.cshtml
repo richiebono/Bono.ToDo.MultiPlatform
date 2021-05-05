@@ -1,0 +1,43 @@
+﻿@using Bono.ToDo.Infrastructure.Resources
+@model  Bono.ToDo.Web.Razor.Models.RoleViewModel
+
+@{
+    ViewBag.Title = "Create";
+}
+<hgroup class="title">
+    <h1>@ViewBag.Title.</h1>
+</hgroup>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary()
+    @Html.HiddenFor(model => model.Id)
+
+
+    <fieldset class="form-horizontal">
+        <legend>Create a Role.</legend>
+
+        <div class="form-group">
+
+            <div class="col-md-10">
+                <hr />
+            </div>
+            @Html.LabelFor(m => m.Name, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                <div class="controls">
+                    @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+                </div>
+            </div>
+        </div>
+
+        <br />
+
+        <div class="form-group">
+            <div class="col-md-10">
+                <div style="float: right; font-size: 14px;">
+                    <input type="submit" value="@Resources.Save" class="btn btn-sm btn-success" />
+                </div>
+            </div>
+        </div>
+    </fieldset>
+}
