@@ -1,0 +1,59 @@
+version: '3.4'
+
+services:
+  
+  Bono.ToDo.Infrastructure.Sql.Data:
+    environment:      
+      - SA_PASSWORD=H@rd2103211943
+      - ACCEPT_EULA=Y  
+    networks:
+      # you may set custom IP addresses
+      bono-internal:
+        ipv4_address: 172.16.237.13
+      bono-external:
+        ipv4_address: 172.16.238.13
+    ports:
+      - "1433:1433"    # Important: In a production environment your should remove the external port
+      
+  Bono.ToDo.Api.Account:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://0.0.0.0:80
+    networks:
+      # you may set custom IP addresses
+      bono-internal:
+        ipv4_address: 172.16.237.11         
+      bono-external:
+        ipv4_address: 172.16.238.11
+    ports:
+      - "8082:80"
+
+  Bono.ToDo.Api.TaskToDo:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development  
+      - ASPNETCORE_URLS=http://0.0.0.0:80
+    networks:
+      # you may set custom IP addresses
+      bono-internal:
+        ipv4_address: 172.16.237.12         
+      bono-external:
+        ipv4_address: 172.16.238.12
+    ports:
+      - "8083:80"
+   
+  Bono.ToDo.Web.Razor:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://0.0.0.0:80
+      - AuthApi=http://172.16.238.3/
+      - TaskToDoApi=http://172.16.238.4/   
+    networks:
+      # you may set custom IP addresses
+      bono-internal:
+        ipv4_address: 172.16.237.10         
+      bono-external:
+        ipv4_address: 172.16.238.10
+    ports:
+      - "8081:80"
+
+
