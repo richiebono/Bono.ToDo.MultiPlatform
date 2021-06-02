@@ -1,4 +1,4 @@
-name: Tests
+name: CodeReview
 
 on:
   push:
@@ -12,6 +12,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Execute tests
+      - name: Execute CodeReview
         working-directory: ./src
         run: docker-compose up --exit-code-from Bono.ToDo.Integration.Tests Bono.ToDo.Integration.Tests
