@@ -56,26 +56,36 @@ services:
     ports:
       - "8081:80"
 
-
   Bono.ToDo.Integration.Tests:
-    container_name: bono-todo-integration-tests
-    image: mcr.microsoft.com/dotnet/sdk:5.0
-    # environment:
-      # - ConnectionStrings__TimeSheetContext=Data Source=sql-server-database; Initial Catalog=TimeSheets; User Id=sa; Password=H@rd2103211943
-    volumes:
-      - .:/src
-      - ../test:/test
-    working_dir: /src
-    command:
-      [
-        "./Scripts/wait-for-it.sh",
-        "Bono.ToDo.Infrastructure.Sql.Data:1433",
-        "--",
-        "dotnet",
-        "test",
-        "0-Test/Bono.ToDo.Application.Tests/Bono.ToDo.Application.Tests.csproj"
-      ]
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://0.0.0.0:80
+    networks:
+      # you may set custom IP addresses
+      bono-internal:
+        ipv4_address: 172.16.237.14         
+      bono-external:
+        ipv4_address: 172.16.238.14
+        
+    depends_on:
+      - Bono.ToDo.Infrastructure.Sql.Data
+      - Bono.ToDo.Api.Account  
+      - Bono.ToDo.Api.TaskToDo
+      - Bono.ToDo.Web.Razor
     
-
-
-
+    # image: mcr.microsoft.com/dotnet/sdk:5.0
+    # # environment:
+      # # - ConnectionStrings__TimeSheetContext=Data Source=sql-server-database; Initial Catalog=TimeSheets; User Id=sa; Password=H@rd2103211943
+    # volumes:
+      # - .:/src
+      # - ../test:/test
+    # working_dir: /src
+    # command:
+      # [
+        # "./Scripts/wait-for-it.sh",        
+        # "--",
+        # "dotnet",
+        # "test",
+        # "0-Test/Bono.ToDo.Application.Tests/Bono.ToDo.Application.Tests.csproj"
+      # ]
+      
