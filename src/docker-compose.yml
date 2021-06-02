@@ -57,6 +57,25 @@ services:
       - Bono.ToDo.Api.Account  
       - Bono.ToDo.Api.TaskToDo
 
+  Bono.ToDo.Integration.Tests:
+    container_name: bono-todo-integration-tests
+    image: mcr.microsoft.com/dotnet/sdk:5.0
+    environment:
+      - ConnectionStrings__TimeSheetContext=Data Source=sql-server-database; Initial Catalog=TimeSheets; User Id=sa; Password=1AvenueCodePassword*
+    volumes:
+      - .:/src
+      - ../test:/test
+    working_dir: /src
+    command:
+      [
+        "./Scripts/wait-for-it.sh",
+        "Bono.ToDo.Infrastructure.Sql.Data:1433",
+        "--",
+        "dotnet",
+        "test",
+        "0-Test/Bono.ToDo.Application.Tests/Bono.ToDo.Application.Tests.csproj"
+      ]
+
 networks:
     # Explicitly-defined internal network for containers to talk to each other
     bono-internal:
