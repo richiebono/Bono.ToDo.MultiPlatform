@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   
-  Bono.ToDo.Infrastructure.Sql.Data:
+  bono-todo-infrastructure-sql-data:
     environment:      
       - SA_PASSWORD=H@rd2103211943
       - ACCEPT_EULA=Y  
@@ -15,7 +15,7 @@ services:
     ports:
       - "1433:1433"    # Important: In a production environment your should remove the external port
       
-  Bono.ToDo.Api.Account:
+  bono-todo-api-account:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://0.0.0.0:80
@@ -28,7 +28,7 @@ services:
     ports:
       - "8082:80"
 
-  Bono.ToDo.Api.TaskToDo:
+  bono-todo-api-task-todo:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development  
       - ASPNETCORE_URLS=http://0.0.0.0:80
@@ -41,7 +41,7 @@ services:
     ports:
       - "8083:80"
    
-  Bono.ToDo.Web.Razor:
+  bono-todo-web-razor:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://0.0.0.0:80
@@ -56,7 +56,7 @@ services:
     ports:
       - "8081:80"
 
-  bono-todo-integration-tests:
+  bono-todo-test:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://0.0.0.0:80

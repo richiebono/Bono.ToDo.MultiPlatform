@@ -2,9 +2,9 @@ version: '3.4'
 
 services:
   
-  Bono.ToDo.Infrastructure.Sql.Data:    
+  bono-todo-infrastructure-sql-data:    
     image: microsoft/mssql-server-linux:2017-latest
-    container_name: Bono.ToDo.Infrastructure.Sql.Data
+    container_name: bono-todo-infrastructure-sql-data
     volumes:
       - mssql-server-linux-data:/var/opt/mssql/data
     networks:
@@ -12,8 +12,9 @@ services:
       bono-internal:
         ipv4_address: 172.16.237.13         
       bono-external:
-        ipv4_address: 172.16.238.13      
-  Bono.ToDo.Api.Account:
+        ipv4_address: 172.16.238.13  
+        
+  bono-todo-api-account:
     image: bono-todo-api-account
     build:
       context: .
@@ -25,10 +26,10 @@ services:
       bono-external: 
         ipv4_address: 172.16.238.11 
     depends_on:    
-      - Bono.ToDo.Infrastructure.Sql.Data   
+      - bono-todo-infrastructure-sql-data   
       
-  Bono.ToDo.Api.TaskToDo:
-    image: bono-todo-api-task
+  bono-todo-api-task-todo:
+    image: bono-todo-api-task-todo
     build:
       context: .
       dockerfile: 2-Api/Bono.ToDo.Api.TaskToDo/Dockerfile
@@ -39,9 +40,9 @@ services:
       bono-external:
         ipv4_address: 172.16.238.12 
     depends_on:    
-      - Bono.ToDo.Infrastructure.Sql.Data  
+      - bono-todo-infrastructure-sql-data  
 
-  Bono.ToDo.Web.Razor:
+  bono-todo-web-razor:
     image: bono-todo-web-razor
     build:
       context: .
@@ -54,11 +55,12 @@ services:
         ipv4_address: 172.16.238.10 
         
     depends_on:
-      - Bono.ToDo.Api.Account  
-      - Bono.ToDo.Api.TaskToDo
+      - bono-todo-api-account
+      - bono-todo-api-task-todo
 
-  bono-todo-integration-tests:
-    container_name: bono-todo-integration-tests
+  bono-todo-test:
+    image: bono-todo-test
+    container_name: bono-todo-test
     build:
       context: .
       dockerfile: 0-Test/Bono.ToDo.Application.Tests//Dockerfile
@@ -70,28 +72,11 @@ services:
         ipv4_address: 172.16.238.14
         
     depends_on:
-      - Bono.ToDo.Infrastructure.Sql.Data
+      - bono-todo-infrastructure-sql-data
       - Bono.ToDo.Api.Account  
       - Bono.ToDo.Api.TaskToDo
       - Bono.ToDo.Web.Razor
-          
-    # image: mcr.microsoft.com/dotnet/sdk:5.0
-    # environment:
-      # - ConnectionStrings__TimeSheetContext=Data Source=sql-server-database; Initial Catalog=TimeSheets; User Id=sa; Password=1AvenueCodePassword*
-    # volumes:
-      # - .:/src
-      # - ../test:/test
-    # working_dir: /src
-    # command:
-      # [
-        # "./Scripts/wait-for-it.sh",
-        # "Bono.ToDo.Infrastructure.Sql.Data:1433",
-        # "--",
-        # "dotnet",
-        # "test",
-        # "0-Test/Bono.ToDo.Application.Tests/Bono.ToDo.Application.Tests.csproj"
-      # ]
-
+    
 networks:
     # Explicitly-defined internal network for containers to talk to each other
     bono-internal:

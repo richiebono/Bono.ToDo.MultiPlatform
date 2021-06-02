@@ -1,4 +1,4 @@
-name: code-review
+name: test-code-review
 
 on:
   push:
@@ -7,11 +7,11 @@ on:
     branches: [ main ]
 
 jobs:
-  test:
+  test-code-review:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Execute code-review
+      - name: Execute test-code-review
         working-directory: ./src
-        run: docker-compose up --exit-code-from bono-todo-integration-tests bono-todo-integration-tests
+        run: docker-compose up --exit-code-from bono-todo-test bono-todo-test
