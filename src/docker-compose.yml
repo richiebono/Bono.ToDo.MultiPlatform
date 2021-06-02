@@ -22,7 +22,7 @@ services:
       # you may set custom IP addresses
       bono-internal:
         ipv4_address: 172.16.237.11         
-      bono-external:
+      bono-external: 
         ipv4_address: 172.16.238.11 
     depends_on:    
       - Bono.ToDo.Infrastructure.Sql.Data   
