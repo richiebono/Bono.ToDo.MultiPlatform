@@ -57,7 +57,7 @@ services:
       - Bono.ToDo.Api.Account  
       - Bono.ToDo.Api.TaskToDo
 
-  Bono.ToDo.Integration.Tests:
+  bono-todo-integration-tests:
     container_name: bono-todo-integration-tests
     build:
       context: .

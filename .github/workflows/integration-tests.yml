@@ -14,4 +14,4 @@ jobs:
         uses: actions/checkout@v2
       - name: Execute code-review
         working-directory: ./src
-        run: docker-compose up --exit-code-from Bono.ToDo.Integration.Tests Bono.ToDo.Integration.Tests
+        run: docker-compose up --exit-code-from bono-todo-integration-tests bono-todo-integration-tests
