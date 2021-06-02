@@ -74,8 +74,7 @@ services:
       - Bono.ToDo.Api.Account  
       - Bono.ToDo.Api.TaskToDo
       - Bono.ToDo.Web.Razor
-      
-    
+          
     # image: mcr.microsoft.com/dotnet/sdk:5.0
     # environment:
       # - ConnectionStrings__TimeSheetContext=Data Source=sql-server-database; Initial Catalog=TimeSheets; User Id=sa; Password=1AvenueCodePassword*
