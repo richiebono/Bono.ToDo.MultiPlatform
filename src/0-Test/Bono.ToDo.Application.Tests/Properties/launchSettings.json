@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "Bono.ToDo.Application.Tests": {
+      "commandName": "Project"
+    }
+  }
+}

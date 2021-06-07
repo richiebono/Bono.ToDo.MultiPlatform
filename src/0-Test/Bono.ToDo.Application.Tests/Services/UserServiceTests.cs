@@ -29,9 +29,9 @@ namespace Bono.ToDo.Application.Tests.Services
 
         [Fact]
         public void PostSendingValidId()
-        {
-            var exception = Assert.Throws<Exception>(() => userService.Post(new UserViewModel { Id = Guid.NewGuid() }));
-            Assert.Equal("UserID must be empty", exception.Message);
+        {            
+            var result = userService.Post(new UserViewModel { Id = Guid.NewGuid() });
+            Assert.Contains("UserID must be empty", result.Errors.Select(x => x.Message).ToList());
         }
 
         [Fact]
@@ -44,22 +44,22 @@ namespace Bono.ToDo.Application.Tests.Services
         [Fact]
         public void PutSendingEmptyGuid()
         {
-            var exception = Assert.Throws<Exception>(() => userService.Put(new UserViewModel()));
-            Assert.Equal("ID is invalid", exception.Message);
+            var result = userService.Put(new UserViewModel());
+            Assert.Contains("ID is invalid", result.Errors.Select(x => x.Message).ToList());
         }
 
         [Fact]
         public void DeleteSendingEmptyGuid()
-        {
-            var exception = Assert.Throws<Exception>(() => userService.Delete(""));
-            Assert.Equal("UserID is not valid", exception.Message);
+        {            
+            var result = userService.Delete("");
+            Assert.Contains("UserID is not valid", result.Errors.Select(x => x.Message).ToList());            
         }
 
         [Fact]
         public void AuthenticateSendingEmptyValues()
         {
-            var exception = Assert.Throws<Exception>(() => userService.Authenticate(new UserAuthenticateRequestViewModel()));
-            Assert.Equal("Email/Password are required.", exception.Message);
+            var result = userService.Authenticate(new UserAuthenticateRequestViewModel());
+            Assert.Contains("Email/Password are required.", result.Errors.Select(x=> x.Message).ToList());
         }
 
         #endregion
@@ -69,7 +69,7 @@ namespace Bono.ToDo.Application.Tests.Services
         [Fact]
         public void PostSendingValidObject()
         {
-            var result = userService.Post(new UserViewModel { FirstName = "Richard Bono", Email = "richiebono@gmail.com", Password = "bono@teste" });
+            var result = userService.Post(new UserViewModel { UserName = "richiebono",  Cpf = "367.337.160-62",  FirstName = "Richard", LastName= "Bono", Email = "richiebono@gmail.com", Password = "bono@teste", ConfirmPassword = "bono@teste", PhoneNumber="(11) 98547-0000" });
             Assert.True(result.IsValid);
         }
 
@@ -89,7 +89,7 @@ namespace Bono.ToDo.Application.Tests.Services
             //Istanciando nossa classe de serviço novamente com os novos objetos mocks que criamos
             
             //Obtendo os valores do método Get para validar se vai retornar o objeto criado acima.
-            var result = userService.GetAll();
+            var result = userRepository.Object.GetAll();
             //Validando se o retorno contém uma lista com objetos.
             Assert.True(result.Count() > 0);
         }
@@ -103,8 +103,8 @@ namespace Bono.ToDo.Application.Tests.Services
         {
             UserViewModel user = new UserViewModel();
 
-            var exception = Assert.Throws<ValidationException>(() => userService.Post(user));
-            Assert.Equal("The sent object was empty.", exception.Message);
+            var result = userService.Post(user);
+            Assert.Contains("The sent object was empty.", result.Errors.Select(x => x.Message).ToList());            
         }
 
         #endregion

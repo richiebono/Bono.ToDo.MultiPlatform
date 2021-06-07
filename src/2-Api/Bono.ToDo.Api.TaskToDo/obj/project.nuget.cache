@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OHHQUKPaCINab7WovrfEi+VgcJJzE8BHPc4om7xmuXoKFCS2l1kwzV6pCqMIpwTtFXQ78DoPCFBIFKKv5+hwPQ==",
+  "dgSpecHash": "A+KdwUVjyVqthtcfWlSDnY4+wcjPRdTltPi3CyBSH1xbKF0kZ2v6jLvlAl6HumGv5HRU562XtRWxYYKuZsskDw==",
   "success": true,
-  "projectFilePath": "C:\\Bono.ToDo\\src\\2-Api\\Bono.ToDo.Api.TaskToDo\\Bono.ToDo.Api.TaskToDo.csproj",
+  "projectFilePath": "C:\\Projects\\Bono.ToDo\\src\\2-Api\\Bono.ToDo.Api.TaskToDo\\Bono.ToDo.Api.TaskToDo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pessegos\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\pessegos\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",

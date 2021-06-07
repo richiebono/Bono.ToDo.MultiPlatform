@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lHFic+ThG5IQ9IDkC5bu61IxjJxeloUPX3cuG9FVoPfnPSgPo0Nw/VEd4tB9CIJoLg4I09KV2C50kZ68+750kA==",
+  "dgSpecHash": "ZrLAH0Dl/FvpKDUQ+ASGNv10nperyQgs/TRGPRSG6cD7GBFTdCFKiEyLC/HFN4qaoJKOTupm66chQYlmJB5D+A==",
   "success": true,
-  "projectFilePath": "C:\\Bono.ToDo\\src\\5-Infrastructure\\Bono.ToDo.Infrastructure.Data\\Bono.ToDo.Infrastructure.Data.csproj",
+  "projectFilePath": "C:\\Projects\\Bono.ToDo\\src\\5-Infrastructure\\Bono.ToDo.Infrastructure.Data\\Bono.ToDo.Infrastructure.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pessegos\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\pessegos\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

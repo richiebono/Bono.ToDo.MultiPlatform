@@ -141,11 +141,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Bono.ToDo\\src\\5-Infrastructure\\Bono.ToDo.Infrastructure.Swagger\\Bono.ToDo.Infrastructure.Swagger.csproj",
+      "projectUniqueName": "C:\\Projects\\Bono.ToDo\\src\\5-Infrastructure\\Bono.ToDo.Infrastructure.Swagger\\Bono.ToDo.Infrastructure.Swagger.csproj",
       "projectName": "Bono.ToDo.Infrastructure.Swagger",
-      "projectPath": "C:\\Bono.ToDo\\src\\5-Infrastructure\\Bono.ToDo.Infrastructure.Swagger\\Bono.ToDo.Infrastructure.Swagger.csproj",
+      "projectPath": "C:\\Projects\\Bono.ToDo\\src\\5-Infrastructure\\Bono.ToDo.Infrastructure.Swagger\\Bono.ToDo.Infrastructure.Swagger.csproj",
       "packagesPath": "C:\\Users\\pessegos\\.nuget\\packages\\",
-      "outputPath": "C:\\Bono.ToDo\\src\\5-Infrastructure\\Bono.ToDo.Infrastructure.Swagger\\obj\\",
+      "outputPath": "C:\\Projects\\Bono.ToDo\\src\\5-Infrastructure\\Bono.ToDo.Infrastructure.Swagger\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -209,7 +209,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

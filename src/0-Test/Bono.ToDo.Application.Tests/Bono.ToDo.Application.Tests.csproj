@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\3-Application\Bono.ToDo.Application\Bono.ToDo.Application.csproj" />
+    <ProjectReference Include="..\..\2-Application\Bono.ToDo.Application\Bono.ToDo.Application.csproj" />
   </ItemGroup>
 
 </Project>

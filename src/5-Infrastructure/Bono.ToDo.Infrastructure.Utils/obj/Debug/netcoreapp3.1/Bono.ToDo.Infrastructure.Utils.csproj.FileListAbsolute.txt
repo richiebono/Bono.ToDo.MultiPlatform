@@ -1,9 +1,0 @@
-C:\Bono.ToDo\src\5-Infrastructure\Bono.ToDo.Infrastructure.Utils\bin\Debug\netcoreapp3.1\Bono.ToDo.Infrastructure.Utils.deps.json
-C:\Bono.ToDo\src\5-Infrastructure\Bono.ToDo.Infrastructure.Utils\bin\Debug\netcoreapp3.1\Bono.ToDo.Infrastructure.Utils.dll
-C:\Bono.ToDo\src\5-Infrastructure\Bono.ToDo.Infrastructure.Utils\bin\Debug\netcoreapp3.1\Bono.ToDo.Infrastructure.Utils.pdb
-C:\Bono.ToDo\src\5-Infrastructure\Bono.ToDo.Infrastructure.Utils\obj\Debug\netcoreapp3.1\Bono.ToDo.Infrastructure.Utils.csprojAssemblyReference.cache
-C:\Bono.ToDo\src\5-Infrastructure\Bono.ToDo.Infrastructure.Utils\obj\Debug\netcoreapp3.1\Bono.ToDo.Infrastructure.Utils.AssemblyInfoInputs.cache
-C:\Bono.ToDo\src\5-Infrastructure\Bono.ToDo.Infrastructure.Utils\obj\Debug\netcoreapp3.1\Bono.ToDo.Infrastructure.Utils.AssemblyInfo.cs
-C:\Bono.ToDo\src\5-Infrastructure\Bono.ToDo.Infrastructure.Utils\obj\Debug\netcoreapp3.1\Bono.ToDo.Infrastructure.Utils.csproj.CoreCompileInputs.cache
-C:\Bono.ToDo\src\5-Infrastructure\Bono.ToDo.Infrastructure.Utils\obj\Debug\netcoreapp3.1\Bono.ToDo.Infrastructure.Utils.dll
-C:\Bono.ToDo\src\5-Infrastructure\Bono.ToDo.Infrastructure.Utils\obj\Debug\netcoreapp3.1\Bono.ToDo.Infrastructure.Utils.pdb

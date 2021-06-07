@@ -1271,16 +1271,6 @@
           "bin/placeholder/Bono.ToDo.Infrastructure.Auth.dll": {}
         }
       },
-      "Bono.ToDo.Infrastructure.Resources/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "compile": {
-          "bin/placeholder/Bono.ToDo.Infrastructure.Resources.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Bono.ToDo.Infrastructure.Resources.dll": {}
-        }
-      },
       "Bono.ToDo.Infrastructure.Utils/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -4765,11 +4755,6 @@
       "path": "../../5-Infrastructure/Bono.ToDo.Infrastructure.Auth/Bono.ToDo.Infrastructure.Auth.csproj",
       "msbuildProject": "../../5-Infrastructure/Bono.ToDo.Infrastructure.Auth/Bono.ToDo.Infrastructure.Auth.csproj"
     },
-    "Bono.ToDo.Infrastructure.Resources/1.0.0": {
-      "type": "project",
-      "path": "../../5-Infrastructure/Bono.ToDo.Infrastructure.Resources/Bono.ToDo.Infrastructure.Resources.csproj",
-      "msbuildProject": "../../5-Infrastructure/Bono.ToDo.Infrastructure.Resources/Bono.ToDo.Infrastructure.Resources.csproj"
-    },
     "Bono.ToDo.Infrastructure.Utils/1.0.0": {
       "type": "project",
       "path": "../../5-Infrastructure/Bono.ToDo.Infrastructure.Utils/Bono.ToDo.Infrastructure.Utils.csproj",
@@ -4781,8 +4766,7 @@
       "AutoMapper >= 10.0.0",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 7.0.0",
       "Bono.ToDo.Domain >= 1.0.0",
-      "Bono.ToDo.Infrastructure.Auth >= 1.0.0",
-      "Bono.ToDo.Infrastructure.Resources >= 1.0.0"
+      "Bono.ToDo.Infrastructure.Auth >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -4794,11 +4778,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Bono.ToDo\\src\\3-Application\\Bono.ToDo.Application\\Bono.ToDo.Application.csproj",
+      "projectUniqueName": "C:\\Projects\\Bono.ToDo\\src\\3-Application\\Bono.ToDo.Application\\Bono.ToDo.Application.csproj",
       "projectName": "Bono.ToDo.Application",
-      "projectPath": "C:\\Bono.ToDo\\src\\3-Application\\Bono.ToDo.Application\\Bono.ToDo.Application.csproj",
+      "projectPath": "C:\\Projects\\Bono.ToDo\\src\\3-Application\\Bono.ToDo.Application\\Bono.ToDo.Application.csproj",
       "packagesPath": "C:\\Users\\pessegos\\.nuget\\packages\\",
-      "outputPath": "C:\\Bono.ToDo\\src\\3-Application\\Bono.ToDo.Application\\obj\\",
+      "outputPath": "C:\\Projects\\Bono.ToDo\\src\\3-Application\\Bono.ToDo.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -4822,14 +4806,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Bono.ToDo\\src\\4-Domain\\Bono.ToDo.Domain\\Bono.ToDo.Domain.csproj": {
-              "projectPath": "C:\\Bono.ToDo\\src\\4-Domain\\Bono.ToDo.Domain\\Bono.ToDo.Domain.csproj"
+            "C:\\Projects\\Bono.ToDo\\src\\4-Domain\\Bono.ToDo.Domain\\Bono.ToDo.Domain.csproj": {
+              "projectPath": "C:\\Projects\\Bono.ToDo\\src\\4-Domain\\Bono.ToDo.Domain\\Bono.ToDo.Domain.csproj"
             },
-            "C:\\Bono.ToDo\\src\\5-Infrastructure\\Bono.ToDo.Infrastructure.Auth\\Bono.ToDo.Infrastructure.Auth.csproj": {
-              "projectPath": "C:\\Bono.ToDo\\src\\5-Infrastructure\\Bono.ToDo.Infrastructure.Auth\\Bono.ToDo.Infrastructure.Auth.csproj"
-            },
-            "C:\\Bono.ToDo\\src\\5-Infrastructure\\Bono.ToDo.Infrastructure.Resources\\Bono.ToDo.Infrastructure.Resources.csproj": {
-              "projectPath": "C:\\Bono.ToDo\\src\\5-Infrastructure\\Bono.ToDo.Infrastructure.Resources\\Bono.ToDo.Infrastructure.Resources.csproj"
+            "C:\\Projects\\Bono.ToDo\\src\\5-Infrastructure\\Bono.ToDo.Infrastructure.Auth\\Bono.ToDo.Infrastructure.Auth.csproj": {
+              "projectPath": "C:\\Projects\\Bono.ToDo\\src\\5-Infrastructure\\Bono.ToDo.Infrastructure.Auth\\Bono.ToDo.Infrastructure.Auth.csproj"
             }
           }
         }
@@ -4868,7 +4849,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

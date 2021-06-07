@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ITiPE7rBiFUUj4nEl5iRHMMmUIDPzvYZsqoTv3nBtjL2y/cecR+blgx6jKQTnVk6kcsGI0zSDvkaV6ZrhL0ioA==",
+  "dgSpecHash": "WZdma1DOW+rjpuj03dnx91u0/ouSM94znNWgV08J4kfjilV3X8zLdmmAmQCkBd6HjSUjQUzyH0lLhF5NCNJFfQ==",
   "success": true,
-  "projectFilePath": "C:\\Bono.ToDo\\src\\5-Infrastructure\\Bono.ToDo.Infrastructure.Utils\\Bono.ToDo.Infrastructure.Utils.csproj",
+  "projectFilePath": "C:\\Projects\\Bono.ToDo\\src\\5-Infrastructure\\Bono.ToDo.Infrastructure.Utils\\Bono.ToDo.Infrastructure.Utils.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pessegos\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0-preview.1.21102.12\\microsoft.extensions.configuration.abstractions.6.0.0-preview.1.21102.12.nupkg.sha512",
     "C:\\Users\\pessegos\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0-preview.1.21102.12\\microsoft.extensions.primitives.6.0.0-preview.1.21102.12.nupkg.sha512"

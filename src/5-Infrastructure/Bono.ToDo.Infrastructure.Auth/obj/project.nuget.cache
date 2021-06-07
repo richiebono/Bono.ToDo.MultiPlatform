@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h6lJSDS36CjRR5qQ7w/cY2Zuuw2RxdcfArfetCJ3W9N8Bh9LsRUho6WHyp7+FcCwNN0H5XfGhW6IksDTosS8Iw==",
+  "dgSpecHash": "r/nbC6FDSZvI6iEUVL/TWYG+5GpA2x2xd/vQ1y/f3UUTxHc7Nn+sTjMraXLpUhA/TtnpTqOI+FInADxii+64Zg==",
   "success": true,
-  "projectFilePath": "C:\\Bono.ToDo\\src\\5-Infrastructure\\Bono.ToDo.Infrastructure.Auth\\Bono.ToDo.Infrastructure.Auth.csproj",
+  "projectFilePath": "C:\\Projects\\Bono.ToDo\\src\\5-Infrastructure\\Bono.ToDo.Infrastructure.Auth\\Bono.ToDo.Infrastructure.Auth.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pessegos\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\pessegos\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

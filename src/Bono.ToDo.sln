@@ -3,53 +3,41 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31025.194
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bono.ToDo.Api.Account", "2-Api\Bono.ToDo.Api.Account\Bono.ToDo.Api.Account.csproj", "{B3CEB423-85DE-4733-9CEB-09A9099A5238}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bono.ToDo.Api.Account", "1-Api\Bono.ToDo.Api.Account\Bono.ToDo.Api.Account.csproj", "{B3CEB423-85DE-4733-9CEB-09A9099A5238}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Api", "2-Api", "{9B4CA541-CFED-4C86-984F-59A90BA8ACD9}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Web", "1-Web", "{DF778B3D-3F74-40BF-98F2-349135FC0F7E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Api", "1-Api", "{9B4CA541-CFED-4C86-984F-59A90BA8ACD9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0-Test", "0-Test", "{8B6EA06A-6196-4873-A51D-F63334A2F680}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Application", "3-Application", "{2D78F0A8-F0D1-405A-B887-40E56FD7319C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Application", "2-Application", "{2D78F0A8-F0D1-405A-B887-40E56FD7319C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-Domain", "4-Domain", "{5A0941DB-219C-408A-9C96-E75CF218AFB8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Domain", "3-Domain", "{5A0941DB-219C-408A-9C96-E75CF218AFB8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5-Infrastructure", "5-Infrastructure", "{F1ABBF21-3413-4890-B974-58032A1A8C9D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-Infrastructure", "4-Infrastructure", "{F1ABBF21-3413-4890-B974-58032A1A8C9D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bono.ToDo.Application.Tests", "0-Test\Bono.ToDo.Application.Tests\Bono.ToDo.Application.Tests.csproj", "{F67BE344-2277-4408-9CA4-7CDA3AF290BA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bono.ToDo.Application", "3-Application\Bono.ToDo.Application\Bono.ToDo.Application.csproj", "{55984BBC-E5A5-41A1-9481-4601444F19AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bono.ToDo.Application", "2-Application\Bono.ToDo.Application\Bono.ToDo.Application.csproj", "{55984BBC-E5A5-41A1-9481-4601444F19AB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bono.ToDo.Domain", "4-Domain\Bono.ToDo.Domain\Bono.ToDo.Domain.csproj", "{7DB15AAD-0A8D-403B-89E8-BDA54AD5A245}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bono.ToDo.Domain", "3-Domain\Bono.ToDo.Domain\Bono.ToDo.Domain.csproj", "{7DB15AAD-0A8D-403B-89E8-BDA54AD5A245}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.1-Data", "5.1-Data", "{66965243-B6B5-4ACF-B09A-FB267194FD55}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1-Data", "4.1-Data", "{66965243-B6B5-4ACF-B09A-FB267194FD55}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.2-CrossCutting", "5.2-CrossCutting", "{EE499BF7-2029-4242-862B-21822B295B88}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2-CrossCutting", "4.2-CrossCutting", "{EE499BF7-2029-4242-862B-21822B295B88}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bono.ToDo.Infrastructure.Data", "5-Infrastructure\Bono.ToDo.Infrastructure.Data\Bono.ToDo.Infrastructure.Data.csproj", "{665580BA-E10E-4FE5-8450-91FDCEA2F89D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bono.ToDo.Infrastructure.Data", "4-Infrastructure\Bono.ToDo.Infrastructure.Data\Bono.ToDo.Infrastructure.Data.csproj", "{665580BA-E10E-4FE5-8450-91FDCEA2F89D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bono.ToDo.Infrastructure.Auth", "5-Infrastructure\Bono.ToDo.Infrastructure.Auth\Bono.ToDo.Infrastructure.Auth.csproj", "{A150B399-30D9-49CF-929E-0E2C686DB6C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bono.ToDo.Infrastructure.Auth", "4-Infrastructure\Bono.ToDo.Infrastructure.Auth\Bono.ToDo.Infrastructure.Auth.csproj", "{A150B399-30D9-49CF-929E-0E2C686DB6C3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bono.ToDo.Infrastructure.Swagger", "5-Infrastructure\Bono.ToDo.Infrastructure.Swagger\Bono.ToDo.Infrastructure.Swagger.csproj", "{6AF10C9F-200F-4E30-93ED-E02DE662B1A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bono.ToDo.Infrastructure.Swagger", "4-Infrastructure\Bono.ToDo.Infrastructure.Swagger\Bono.ToDo.Infrastructure.Swagger.csproj", "{6AF10C9F-200F-4E30-93ED-E02DE662B1A2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bono.ToDo.Infrastructure.IoC", "5-Infrastructure\Bono.ToDo.Infrastructure.IoC\Bono.ToDo.Infrastructure.IoC.csproj", "{0539E226-62C7-4A65-A447-19728DC135EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bono.ToDo.Infrastructure.IoC", "4-Infrastructure\Bono.ToDo.Infrastructure.IoC\Bono.ToDo.Infrastructure.IoC.csproj", "{0539E226-62C7-4A65-A447-19728DC135EB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bono.ToDo.Infrastructure.Resources", "5-Infrastructure\Bono.ToDo.Infrastructure.Resources\Bono.ToDo.Infrastructure.Resources.csproj", "{47FA55E7-87F8-4FFD-8C66-245FCDDF2C20}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bono.ToDo.Api.TaskToDo", "1-Api\Bono.ToDo.Api.TaskToDo\Bono.ToDo.Api.TaskToDo.csproj", "{C7EB1214-3DFD-4527-A77D-A59F4A02E051}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bono.ToDo.Api.TaskToDo", "2-Api\Bono.ToDo.Api.TaskToDo\Bono.ToDo.Api.TaskToDo.csproj", "{C7EB1214-3DFD-4527-A77D-A59F4A02E051}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bono.ToDo.Infrastructure.Utils", "4-Infrastructure\Bono.ToDo.Infrastructure.Utils\Bono.ToDo.Infrastructure.Utils.csproj", "{847EEF9B-8B6F-42CD-80EB-16D83C8A4B40}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bono.ToDo.Web.Angular", "1-Web\Bono.ToDo.Web.Angular\Bono.ToDo.Web.Angular.csproj", "{D06BDC75-95EB-445C-AD73-1BC16F94709B}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bono.ToDo.Web.React", "1-Web\Bono.ToDo.Web.React\Bono.ToDo.Web.React.csproj", "{C2F74459-07E8-493B-B1F1-517061240242}"
-EndProject
-Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Bono.ToDo.Web.Vue", "1-Web\Bono.ToDo.Web.Vue\Bono.ToDo.Web.Vue.njsproj", "{73525668-8F07-4266-A4F1-4E324D33BC71}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bono.ToDo.Infrastructure.Utils", "5-Infrastructure\Bono.ToDo.Infrastructure.Utils\Bono.ToDo.Infrastructure.Utils.csproj", "{847EEF9B-8B6F-42CD-80EB-16D83C8A4B40}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bono.ToDo.Web.Razor", "1-Web\Bono.ToDo.Web.Razor\Bono.ToDo.Web.Razor.csproj", "{3C4D5086-416E-4BA9-A42F-845A716D37C5}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6-Cluster", "6-Cluster", "{2D9CBED7-4810-4C4D-8903-7101A6305D97}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5-Cluster", "5-Cluster", "{2D9CBED7-4810-4C4D-8903-7101A6305D97}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{90B84390-AECF-427A-B70E-64EE53E41E97}"
 EndProject
@@ -91,34 +79,14 @@ Global
 		{0539E226-62C7-4A65-A447-19728DC135EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0539E226-62C7-4A65-A447-19728DC135EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0539E226-62C7-4A65-A447-19728DC135EB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{47FA55E7-87F8-4FFD-8C66-245FCDDF2C20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{47FA55E7-87F8-4FFD-8C66-245FCDDF2C20}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{47FA55E7-87F8-4FFD-8C66-245FCDDF2C20}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{47FA55E7-87F8-4FFD-8C66-245FCDDF2C20}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C7EB1214-3DFD-4527-A77D-A59F4A02E051}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C7EB1214-3DFD-4527-A77D-A59F4A02E051}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7EB1214-3DFD-4527-A77D-A59F4A02E051}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7EB1214-3DFD-4527-A77D-A59F4A02E051}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D06BDC75-95EB-445C-AD73-1BC16F94709B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D06BDC75-95EB-445C-AD73-1BC16F94709B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D06BDC75-95EB-445C-AD73-1BC16F94709B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D06BDC75-95EB-445C-AD73-1BC16F94709B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C2F74459-07E8-493B-B1F1-517061240242}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C2F74459-07E8-493B-B1F1-517061240242}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C2F74459-07E8-493B-B1F1-517061240242}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C2F74459-07E8-493B-B1F1-517061240242}.Release|Any CPU.Build.0 = Release|Any CPU
-		{73525668-8F07-4266-A4F1-4E324D33BC71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{73525668-8F07-4266-A4F1-4E324D33BC71}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{73525668-8F07-4266-A4F1-4E324D33BC71}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{73525668-8F07-4266-A4F1-4E324D33BC71}.Release|Any CPU.Build.0 = Release|Any CPU
 		{847EEF9B-8B6F-42CD-80EB-16D83C8A4B40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{847EEF9B-8B6F-42CD-80EB-16D83C8A4B40}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{847EEF9B-8B6F-42CD-80EB-16D83C8A4B40}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{847EEF9B-8B6F-42CD-80EB-16D83C8A4B40}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3C4D5086-416E-4BA9-A42F-845A716D37C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3C4D5086-416E-4BA9-A42F-845A716D37C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3C4D5086-416E-4BA9-A42F-845A716D37C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3C4D5086-416E-4BA9-A42F-845A716D37C5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{90B84390-AECF-427A-B70E-64EE53E41E97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{90B84390-AECF-427A-B70E-64EE53E41E97}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90B84390-AECF-427A-B70E-64EE53E41E97}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -138,13 +106,8 @@ Global
 		{A150B399-30D9-49CF-929E-0E2C686DB6C3} = {EE499BF7-2029-4242-862B-21822B295B88}
 		{6AF10C9F-200F-4E30-93ED-E02DE662B1A2} = {EE499BF7-2029-4242-862B-21822B295B88}
 		{0539E226-62C7-4A65-A447-19728DC135EB} = {EE499BF7-2029-4242-862B-21822B295B88}
-		{47FA55E7-87F8-4FFD-8C66-245FCDDF2C20} = {EE499BF7-2029-4242-862B-21822B295B88}
 		{C7EB1214-3DFD-4527-A77D-A59F4A02E051} = {9B4CA541-CFED-4C86-984F-59A90BA8ACD9}
-		{D06BDC75-95EB-445C-AD73-1BC16F94709B} = {DF778B3D-3F74-40BF-98F2-349135FC0F7E}
-		{C2F74459-07E8-493B-B1F1-517061240242} = {DF778B3D-3F74-40BF-98F2-349135FC0F7E}
-		{73525668-8F07-4266-A4F1-4E324D33BC71} = {DF778B3D-3F74-40BF-98F2-349135FC0F7E}
 		{847EEF9B-8B6F-42CD-80EB-16D83C8A4B40} = {EE499BF7-2029-4242-862B-21822B295B88}
-		{3C4D5086-416E-4BA9-A42F-845A716D37C5} = {DF778B3D-3F74-40BF-98F2-349135FC0F7E}
 		{90B84390-AECF-427A-B70E-64EE53E41E97} = {2D9CBED7-4810-4C4D-8903-7101A6305D97}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution

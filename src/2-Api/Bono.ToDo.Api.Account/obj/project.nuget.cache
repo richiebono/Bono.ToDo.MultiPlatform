@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9J4KpsRi2BfrwLj5foVMsp3BR174pCJUpdnHG9kB781TbDsCiXgdTaxf0C+EBEU8YtJGGYAd3PCIE1xPK6spXQ==",
+  "dgSpecHash": "AFuEeYCLF7talduQJi92+UlyPAFZaDnkXPvGKPUmn9Svna91PMwiStsHchLwTFiRpoJIOn7zM+eLRIFJ3lCJuQ==",
   "success": true,
-  "projectFilePath": "C:\\Bono.ToDo\\src\\2-Api\\Bono.ToDo.Api.Account\\Bono.ToDo.Api.Account.csproj",
+  "projectFilePath": "C:\\Projects\\Bono.ToDo\\src\\2-Api\\Bono.ToDo.Api.Account\\Bono.ToDo.Api.Account.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pessegos\\.nuget\\packages\\aspnetcore.http.extensions\\1.0.1\\aspnetcore.http.extensions.1.0.1.nupkg.sha512",
     "C:\\Users\\pessegos\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",

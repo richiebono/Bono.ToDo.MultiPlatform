@@ -13,18 +13,22 @@ services:
         ipv4_address: 172.16.237.13         
       bono-external:
         ipv4_address: 172.16.238.13  
+    ports:
+      - "1433:1433"
         
   bono-todo-api-account:
     image: bono-todo-api-account
     build:
       context: .
-      dockerfile: 2-Api/Bono.ToDo.Api.Account/Dockerfile
+      dockerfile: 1-Api/Bono.ToDo.Api.Account/Dockerfile
     networks:
       # you may set custom IP addresses
       bono-internal:
         ipv4_address: 172.16.237.11         
       bono-external: 
         ipv4_address: 172.16.238.11 
+    ports:
+      - "8082:80"
     depends_on:    
       - bono-todo-infrastructure-sql-data   
       
@@ -32,50 +36,37 @@ services:
     image: bono-todo-api-task-todo
     build:
       context: .
-      dockerfile: 2-Api/Bono.ToDo.Api.TaskToDo/Dockerfile
+      dockerfile: 1-Api/Bono.ToDo.Api.TaskToDo/Dockerfile
     networks:
       # you may set custom IP addresses
       bono-internal:
         ipv4_address: 172.16.237.12         
       bono-external:
         ipv4_address: 172.16.238.12 
+    ports:
+      - "8083:80"
     depends_on:    
       - bono-todo-infrastructure-sql-data  
-
-  bono-todo-web-razor:
-    image: bono-todo-web-razor
-    build:
-      context: .
-      dockerfile: 1-Web/Bono.ToDo.Web.Razor/Dockerfile
-    networks:
-      # you may set custom IP addresses
-      bono-internal:
-        ipv4_address: 172.16.237.10         
-      bono-external:
-        ipv4_address: 172.16.238.10 
-        
-    depends_on:
       - bono-todo-api-account
-      - bono-todo-api-task-todo
-
+  
   bono-todo-test:
     image: bono-todo-test
     container_name: bono-todo-test
     build:
       context: .
-      dockerfile: 0-Test/Bono.ToDo.Application.Tests//Dockerfile
+      dockerfile: 0-Test/Bono.ToDo.Application.Tests/Dockerfile
     networks:
-      # you may set custom IP addresses
+      # you may set custom ip addresses
       bono-internal:
         ipv4_address: 172.16.237.14         
       bono-external:
         ipv4_address: 172.16.238.14
-        
+    ports:
+      - "8084:80"
     depends_on:
       - bono-todo-infrastructure-sql-data
-      - Bono.ToDo.Api.Account  
-      - Bono.ToDo.Api.TaskToDo
-      - Bono.ToDo.Web.Razor
+      - bono-todo-api-account  
+      - bono-todo-api-task-todo      
     
 networks:
     # Explicitly-defined internal network for containers to talk to each other

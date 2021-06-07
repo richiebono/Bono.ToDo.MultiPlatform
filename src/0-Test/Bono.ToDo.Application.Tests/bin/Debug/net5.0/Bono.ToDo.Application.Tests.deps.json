@@ -1446,8 +1446,7 @@
           "AutoMapper": "10.0.0",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "7.0.0",
           "Bono.ToDo.Domain": "1.0.0",
-          "Bono.ToDo.Infrastructure.Auth": "1.0.0",
-          "Bono.ToDo.Infrastructure.Resources": "1.0.0"
+          "Bono.ToDo.Infrastructure.Auth": "1.0.0"
         },
         "runtime": {
           "Bono.ToDo.Application.dll": {}
@@ -1469,22 +1468,6 @@
         },
         "runtime": {
           "Bono.ToDo.Infrastructure.Auth.dll": {}
-        }
-      },
-      "Bono.ToDo.Infrastructure.Resources/1.0.0": {
-        "runtime": {
-          "Bono.ToDo.Infrastructure.Resources.dll": {}
-        },
-        "resources": {
-          "en-us/Bono.ToDo.Infrastructure.Resources.resources.dll": {
-            "locale": "en-us"
-          },
-          "es-es/Bono.ToDo.Infrastructure.Resources.resources.dll": {
-            "locale": "es-es"
-          },
-          "pt-br/Bono.ToDo.Infrastructure.Resources.resources.dll": {
-            "locale": "pt-br"
-          }
         }
       },
       "Bono.ToDo.Infrastructure.Utils/1.0.0": {
@@ -2494,11 +2477,6 @@
       "sha512": ""
     },
     "Bono.ToDo.Infrastructure.Auth/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Bono.ToDo.Infrastructure.Resources/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

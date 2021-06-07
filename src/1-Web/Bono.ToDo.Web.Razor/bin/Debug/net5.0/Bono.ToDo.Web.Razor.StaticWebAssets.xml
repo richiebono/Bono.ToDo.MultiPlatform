@@ -1,5 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<StaticWebAssets Version="1.0">
-  <ContentRoot BasePath="_content/Bono.ToDo.Api.Account" Path="/src/2-Api/Bono.ToDo.Api.Account/wwwroot/" />
-  <ContentRoot BasePath="_content/Bono.ToDo.Api.TaskToDo" Path="/src/2-Api/Bono.ToDo.Api.TaskToDo/wwwroot/" />
-</StaticWebAssets>

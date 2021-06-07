@@ -97,11 +97,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Bono.ToDo\\src\\4-Domain\\Bono.ToDo.Domain\\Bono.ToDo.Domain.csproj",
+      "projectUniqueName": "C:\\Projects\\Bono.ToDo\\src\\4-Domain\\Bono.ToDo.Domain\\Bono.ToDo.Domain.csproj",
       "projectName": "Bono.ToDo.Domain",
-      "projectPath": "C:\\Bono.ToDo\\src\\4-Domain\\Bono.ToDo.Domain\\Bono.ToDo.Domain.csproj",
+      "projectPath": "C:\\Projects\\Bono.ToDo\\src\\4-Domain\\Bono.ToDo.Domain\\Bono.ToDo.Domain.csproj",
       "packagesPath": "C:\\Users\\pessegos\\.nuget\\packages\\",
-      "outputPath": "C:\\Bono.ToDo\\src\\4-Domain\\Bono.ToDo.Domain\\obj\\",
+      "outputPath": "C:\\Projects\\Bono.ToDo\\src\\4-Domain\\Bono.ToDo.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -125,8 +125,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Bono.ToDo\\src\\5-Infrastructure\\Bono.ToDo.Infrastructure.Utils\\Bono.ToDo.Infrastructure.Utils.csproj": {
-              "projectPath": "C:\\Bono.ToDo\\src\\5-Infrastructure\\Bono.ToDo.Infrastructure.Utils\\Bono.ToDo.Infrastructure.Utils.csproj"
+            "C:\\Projects\\Bono.ToDo\\src\\5-Infrastructure\\Bono.ToDo.Infrastructure.Utils\\Bono.ToDo.Infrastructure.Utils.csproj": {
+              "projectPath": "C:\\Projects\\Bono.ToDo\\src\\5-Infrastructure\\Bono.ToDo.Infrastructure.Utils\\Bono.ToDo.Infrastructure.Utils.csproj"
             }
           }
         }
@@ -155,7 +155,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
