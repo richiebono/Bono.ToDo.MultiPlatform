@@ -7,12 +7,12 @@ services:
     container_name: bono-todo-infrastructure-sql-data
     volumes:
       - mssql-server-linux-data:/var/opt/mssql/data
-    networks:
-    # you may set custom IP addresses
-      bono-internal:
-        ipv4_address: 172.16.237.13         
-      bono-external:
-        ipv4_address: 172.16.238.13  
+    # networks:
+    # # you may set custom IP addresses
+    #   bono-internal:
+    #     ipv4_address: 172.16.237.13         
+    #   bono-external:
+    #     ipv4_address: 172.16.238.13  
     ports:
       - "1433:1433"
         
@@ -21,12 +21,12 @@ services:
     build:
       context: .
       dockerfile: 1-Api/Bono.ToDo.Api.Account/Dockerfile
-    networks:
-      # you may set custom IP addresses
-      bono-internal:
-        ipv4_address: 172.16.237.11         
-      bono-external: 
-        ipv4_address: 172.16.238.11 
+    # networks:
+    #   # you may set custom IP addresses
+    #   bono-internal:
+    #     ipv4_address: 172.16.237.11         
+    #   bono-external: 
+    #     ipv4_address: 172.16.238.11 
     ports:
       - "8082:80"
     depends_on:    
@@ -37,12 +37,12 @@ services:
     build:
       context: .
       dockerfile: 1-Api/Bono.ToDo.Api.TaskToDo/Dockerfile
-    networks:
-      # you may set custom IP addresses
-      bono-internal:
-        ipv4_address: 172.16.237.12         
-      bono-external:
-        ipv4_address: 172.16.238.12 
+    # networks:
+    #   # you may set custom IP addresses
+    #   bono-internal:
+    #     ipv4_address: 172.16.237.12         
+    #   bono-external:
+    #     ipv4_address: 172.16.238.12 
     ports:
       - "8083:80"
     depends_on:    
@@ -55,12 +55,12 @@ services:
     build:
       context: .
       dockerfile: 0-Test/Bono.ToDo.Application.Tests/Dockerfile
-    networks:
-      # you may set custom ip addresses
-      bono-internal:
-        ipv4_address: 172.16.237.14         
-      bono-external:
-        ipv4_address: 172.16.238.14
+    # networks:
+    #   # you may set custom ip addresses
+    #   bono-internal:
+    #     ipv4_address: 172.16.237.14         
+    #   bono-external:
+    #     ipv4_address: 172.16.238.14
     ports:
       - "8084:80"
     depends_on:
@@ -68,19 +68,19 @@ services:
       - bono-todo-api-account  
       - bono-todo-api-task-todo      
     
-networks:
-    # Explicitly-defined internal network for containers to talk to each other
-    bono-internal:
-        ipam:
-            config:
-              - subnet: 172.16.237.0/24
-                gateway: 172.16.237.1
-    # Network for exposing IPs for access from the host, e.g. your browser
-    bono-external:
-        ipam:
-            config:
-              - subnet: 172.16.238.0/24
-                gateway: 172.16.238.1
+# networks:
+#     # Explicitly-defined internal network for containers to talk to each other
+#     bono-internal:
+#         ipam:
+#             config:
+#               - subnet: 172.16.237.0/24
+#                 gateway: 172.16.237.1
+#     # Network for exposing IPs for access from the host, e.g. your browser
+#     bono-external:
+#         ipam:
+#             config:
+#               - subnet: 172.16.238.0/24
+#                 gateway: 172.16.238.1
 
 volumes:
   mssql-server-linux-data:
