@@ -42,7 +42,7 @@ namespace Bono.ToDo.Data.Repositories
                 Save();
                 return response.Entity;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
 
                 throw;
