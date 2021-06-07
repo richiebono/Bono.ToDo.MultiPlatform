@@ -23,11 +23,7 @@ jobs:
     - name: build container image bono-todo-api-task-todo
       working-directory: ./src/2-Api/Bono.ToDo.Api.TaskToDo
       run: docker build -t richiebono/bono-todo-api-task-todo:${{ github.sha }} .
-       
-    - name: build container image bono-todo-web-razor
-      working-directory: ./src/1-Web/Bono.ToDo.Web.Razor/
-      run: docker build -t richiebono/bono-todo-web-razor:${{ github.sha }} .      
-    
+ 
     - name: build container image bono-todo-test
       working-directory: ./src/0-Test/Bono.ToDo.Application.Tests/
       run: docker build -t richiebono/bono-todo-test:${{ github.sha }} .      
@@ -44,9 +40,6 @@ jobs:
     - name: push container image bono-todo-api-task-todo
       run: docker push richiebono/bono-todo-api-task-todo:${{ github.sha }}
       
-    - name: push container image bono-todo-web-razor
-      run: docker push richiebono/bono-todo-web-razor:${{ github.sha }}
-    
     - name: push container image bono-todo-test
       run: docker push richiebono/bono-todo-test:${{ github.sha }}
     
