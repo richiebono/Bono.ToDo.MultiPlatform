@@ -41,8 +41,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5-Cluster", "5-Cluster", "{
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{90B84390-AECF-427A-B70E-64EE53E41E97}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bono.ToDo.Api.Test", "1-Api\Bono.ToDo.Api.Test\Bono.ToDo.Api.Test.csproj", "{23B3202A-86E5-48DA-831B-5E80DB2538B2}"
-EndProject
+
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
