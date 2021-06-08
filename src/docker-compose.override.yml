@@ -6,12 +6,12 @@ services:
     environment:      
       - SA_PASSWORD=H@rd2103211943
       - ACCEPT_EULA=Y  
-    # networks:
-    #  # you may set custom IP addresses
-    #  bono-internal:
-    #    ipv4_address: 172.16.237.13
-    #  bono-external:
-    #    ipv4_address: 172.16.238.13
+    networks:
+     # you may set custom IP addresses
+     bono-internal:
+       ipv4_address: 172.16.237.13
+     bono-external:
+       ipv4_address: 172.16.238.13
     ports:
       - "1433:1433"    # Important: In a production environment your should remove the external port
       
@@ -19,12 +19,12 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://0.0.0.0:80
-    # networks:
-    #  # you may set custom IP addresses
-    #  bono-internal:
-    #    ipv4_address: 172.16.237.11         
-    #  bono-external:
-    #    ipv4_address: 172.16.238.11
+    networks:
+     # you may set custom IP addresses
+     bono-internal:
+       ipv4_address: 172.16.237.11         
+     bono-external:
+       ipv4_address: 172.16.238.11
     ports:
       - "8082:80"
 
@@ -45,28 +45,28 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://0.0.0.0:80
-    # networks:
-    #  # you may set custom ip addresses
-    #  bono-internal:
-    #    ipv4_address: 172.16.237.14        
-    #  bono-external:
-    #    ipv4_address: 172.16.238.14
+    networks:
+     # you may set custom ip addresses
+     bono-internal:
+       ipv4_address: 172.16.237.14        
+     bono-external:
+       ipv4_address: 172.16.238.14
     ports:
       - "8084:80"
     
-# networks:
-#    # Explicitly-defined internal network for containers to talk to each other
-#    bono-internal:
-#        ipam:
-#            config:
-#              - subnet: 172.16.237.0/24
-#                gateway: 172.16.237.1
-#    # Network for exposing IPs for access from the host, e.g. your browser
-#    bono-external:
-#        ipam:
-#            config:
-#              - subnet: 172.16.238.0/24
-#                gateway: 172.16.238.1
+networks:
+   # Explicitly-defined internal network for containers to talk to each other
+   bono-internal:
+       ipam:
+           config:
+             - subnet: 172.16.237.0/24
+               gateway: 172.16.237.1
+   # Network for exposing IPs for access from the host, e.g. your browser
+   bono-external:
+       ipam:
+           config:
+             - subnet: 172.16.238.0/24
+               gateway: 172.16.238.1
                 
 volumes:
   mssql-server-linux-data:
