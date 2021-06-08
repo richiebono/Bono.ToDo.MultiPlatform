@@ -14,8 +14,16 @@ jobs:
       with:
         dotnet-version: '5.0.x'
 
+    - name: Install SonarQube
+      run: | 
+             dotnet tool install --global dotnet-sonarscanner
+             sudo update-ca-certificates
+                          
+
     - name: Build with dotnet
-      run: dotnet build ./src/Bono.ToDo.sln --configuration Release /warnaserror
+      run: | 
+             msbuild /p:SonarQubeTargetsImported=true
+             dotnet build ./src/Bono.ToDo.sln --configuration Release /warnaserror -p:SonarQubeTargetsImported=true
     
     - name: Test with dotnet
       run: dotnet test ./src/Bono.ToDo.sln --configuration Release /warnaserror
