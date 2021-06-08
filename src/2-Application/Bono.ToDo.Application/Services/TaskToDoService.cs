@@ -27,13 +27,14 @@ namespace Bono.ToDo.Application.Services
         private readonly IMapper mapper;
         private readonly ValidationResult validationResult;
 
-        public TaskToDoService(ITaskToDoRepository taskToDoRepository, IMapper mapper, ValidationResult validationResult, ITaskToDoInviteService taskInviteService, IUserService userService /*, IEmailManager emailManager*/)
+        public TaskToDoService(ITaskToDoRepository taskToDoRepository, IMapper mapper, ValidationResult validationResult, ITaskToDoInviteService taskInviteService, IUserService userService /*, IEmailManager emailManager*/, ITaskToDoUserService taskUserService)
         {
             this.taskToDoRepository = taskToDoRepository;
             this.mapper = mapper;
             this.validationResult = validationResult;
             this.taskInviteService = taskInviteService;
             this.userService = userService;
+            this.taskUserService = taskUserService;
             //this.emailManager = emailManager;
         }        
 
