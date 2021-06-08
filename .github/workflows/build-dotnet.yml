@@ -22,8 +22,8 @@ jobs:
 
     - name: Build with dotnet
       run: | 
-             msbuild /p:SonarQubeTargetsImported=true
-             dotnet build ./src/Bono.ToDo.sln --configuration Release /warnaserror -p:SonarQubeTargetsImported=true
+             msbuild ./src/Bono.ToDo.sln /p:SonarQubeTargetsImported=true
+             dotnet build ./src/Bono.ToDo.sln --configuration Release -p:SonarQubeTargetsImported=true
     
     - name: Test with dotnet
       run: dotnet test ./src/Bono.ToDo.sln --configuration Release /warnaserror
