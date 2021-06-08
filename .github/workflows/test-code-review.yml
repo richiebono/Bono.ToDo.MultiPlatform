@@ -1,17 +1,17 @@
-name: test-code-review
+# name: test-code-review
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+# on:
+#   push:
+#     branches: [ main ]
+#   pull_request:
+#     branches: [ main ]
 
-jobs:
-  test-code-review:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Execute test-code-review
-        working-directory: ./src
-        run: docker-compose up --exit-code-from bono-todo-test bono-todo-test
+# jobs:
+#   test-code-review:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v2
+#       - name: Execute test-code-review
+#         working-directory: ./src
+#         run: docker-compose up --exit-code-from bono-todo-test bono-todo-test
