@@ -22,16 +22,19 @@ namespace Bono.ToDo.Application.Services
         private readonly IUserService userService;        
         private readonly ITaskToDoUserService taskUserService;
         private readonly ITaskToDoInviteService taskInviteService;
-        private readonly IEmailManager emailManager;
+        //private readonly IEmailManager emailManager;
 
         private readonly IMapper mapper;
         private readonly ValidationResult validationResult;
 
-        public TaskToDoService(ITaskToDoRepository taskToDoRepository, IMapper mapper, ValidationResult validationResult)
+        public TaskToDoService(ITaskToDoRepository taskToDoRepository, IMapper mapper, ValidationResult validationResult, ITaskToDoInviteService taskInviteService, IUserService userService /*, IEmailManager emailManager*/)
         {
             this.taskToDoRepository = taskToDoRepository;
             this.mapper = mapper;
             this.validationResult = validationResult;
+            this.taskInviteService = taskInviteService;
+            this.userService = userService;
+            //this.emailManager = emailManager;
         }        
 
         public ValidationResult Post(TaskToDoViewModel TaskToDoViewModel)
@@ -117,7 +120,7 @@ namespace Bono.ToDo.Application.Services
                 var tasksEmail = this.taskToDoRepository.Query(x => x.User.Id == user.Id && x.TaskFather.Id == item.Id).ToList();
                 foreach (var taskEmail in tasksEmail)
                 {
-                    if (tasks.Where(x => x.Id == taskEmail.Id).Count() == 0)
+                    if (!tasks.Any())
                     {
                         tasks.Add(taskEmail);
                     }
@@ -131,7 +134,7 @@ namespace Bono.ToDo.Application.Services
                 var tasksUser = this.taskToDoRepository.Query(x => x.User.Id == item.User.Id && x.TaskFather.Id == item.Task.TaskId).ToList();
                 foreach (var taskUser in tasksUser)
                 {
-                    if (tasks.Where(x => x.Id == taskUser.Id).Count() == 0)
+                    if (!tasks.Any())
                     {
                         tasks.Add(taskUser);
                     }

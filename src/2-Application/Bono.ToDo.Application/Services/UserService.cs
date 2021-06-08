@@ -55,7 +55,7 @@ namespace Bono.ToDo.Application.Services
 
             Validator.ValidateObject(userViewModel, new ValidationContext(userViewModel), true);
 
-            User user = new User(userViewModel.UserName, userViewModel.Password, userViewModel.FirstName, userViewModel.LastName, userViewModel.Cpf, userViewModel.Email, userViewModel.PhoneNumber);
+            User user = new(userViewModel.UserName, userViewModel.Password, userViewModel.FirstName, userViewModel.LastName, userViewModel.Cpf, userViewModel.Email, userViewModel.PhoneNumber);
             user.SetPassword(security.EncryptPassword(userViewModel.Password));
 
             validationResult.Entity = this.userRepository.Create(user);
