@@ -52,7 +52,7 @@ services:
      bono-external:
        ipv4_address: 172.16.238.14
     ports:
-      - "8084:80"
+      - "8085:80"
     
 networks:
    # Explicitly-defined internal network for containers to talk to each other

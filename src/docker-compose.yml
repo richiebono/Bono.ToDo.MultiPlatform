@@ -62,7 +62,7 @@ services:
       bono-external:
         ipv4_address: 172.16.238.14
     ports:
-      - "8084:80"
+      - "8085:80"
     depends_on:
       - bono-todo-infrastructure-sql-data
       - bono-todo-api-account  
