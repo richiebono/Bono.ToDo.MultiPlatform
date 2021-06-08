@@ -1,4 +1,4 @@
-name: Bono.ToDo Build and Test with docker-compose
+name: Bono.ToDo Build and Test with Docker-Compose
 
 on:
   push:

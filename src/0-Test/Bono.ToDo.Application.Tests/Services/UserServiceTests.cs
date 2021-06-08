@@ -18,7 +18,7 @@ namespace Bono.ToDo.Application.Tests.Services
 {
     public class UserServiceTests
     {
-        private UserService userService;
+        private readonly UserService userService;
 
         public UserServiceTests()
         {
@@ -77,8 +77,10 @@ namespace Bono.ToDo.Application.Tests.Services
         public void GetValidatingObject()
         {
             //Criando a lista com um objeto para que seja retornado pelo repository
-            List<User> users = new List<User>();
-            users.Add(new User("Richard Bono", "admin@123", "Richard Bono", "Oliveira", "123.456.456-56", "richiebono@gmail.com", "+55 11-98547-3851"));
+            List<User> users = new()
+            {
+                new User("Richard Bono", "admin@123", "Richard Bono", "Oliveira", "123.456.456-56", "richiebono@gmail.com", "+55 11-98547-3851")
+            };
             //Criando um objeto mock do UserRepository e configurando para retornar a lista criada anteriormente se chamar o método GetAll()
             var userRepository = new Mock<IUserRepository>();
             userRepository.Setup(x => x.GetAll()).Returns(users);
@@ -91,7 +93,7 @@ namespace Bono.ToDo.Application.Tests.Services
             //Obtendo os valores do método Get para validar se vai retornar o objeto criado acima.
             var result = userRepository.Object.GetAll();
             //Validando se o retorno contém uma lista com objetos.
-            Assert.True(result.Count() > 0);
+            Assert.True(result.Any());
         }
 
         #endregion
@@ -101,7 +103,7 @@ namespace Bono.ToDo.Application.Tests.Services
         [Fact]
         public void PostSendingInvalidObject()
         {
-            UserViewModel user = new UserViewModel();
+            UserViewModel user = new();
 
             var result = userService.Post(user);
             Assert.Contains("The sent object was empty.", result.Errors.Select(x => x.Message).ToList());            
