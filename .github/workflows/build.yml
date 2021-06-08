@@ -19,15 +19,15 @@ jobs:
       
     - name: build container image bono-todo-api-account
       working-directory: ./src/1-Api/Bono.ToDo.Api.Account/      
-      run: docker build 
+      run: docker build -t richiebono/bono-todo-api-account:${{ github.sha }} .
       
     - name: build container image bono-todo-api-task-todo
       working-directory: ./src/1-Api/Bono.ToDo.Api.TaskToDo
-      run: docker build 
+      run: docker build -t richiebono/bono-todo-api-task-todo:${{ github.sha }} .
  
     - name: build container image bono-todo-test
       working-directory: ./src/0-Test/Bono.ToDo.Application.Tests/
-      run: docker build 
+      run: docker build -t richiebono/bono-todo-test:${{ github.sha }} .      
     
     - name: Login to DockerHub
       uses: docker/login-action@v1 
