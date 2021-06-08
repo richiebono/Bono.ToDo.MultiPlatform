@@ -8,7 +8,7 @@ FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src/1-Api/Bono.ToDo.Api.Account/
 COPY ["Bono.ToDo.Api.Account.csproj", "1-Api/Bono.ToDo.Api.Account/"]
 RUN dotnet restore "1-Api/Bono.ToDo.Api.Account/Bono.ToDo.Api.Account.csproj"
-COPY ./src/1-Api/Bono.ToDo.Api.Account/ .
+COPY . .
 WORKDIR "/src/1-Api/Bono.ToDo.Api.Account"
 RUN dotnet build "Bono.ToDo.Api.Account.csproj" -c Release -o /app/build
 
